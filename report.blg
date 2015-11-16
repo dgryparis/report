@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: bibliography/IEEEtranN.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bibliography/references.bib
+Warning--I didn't find a database entry for "richardson2013iros"
+Warning--I didn't find a database entry for "ROS_April"
+-- IEEEtranN.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Natbib version - not for normal IEEE work.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+
+Done.
+You've used 14 entries,
+            4749 wiz_defined-function locations,
+            1022 strings with 10866 characters,
+and the built_in function-call counts, 11525 in all, are:
+= -- 953
+> -- 318
+< -- 80
++ -- 173
+- -- 68
+* -- 596
+:= -- 1604
+add.period$ -- 27
+call.type$ -- 14
+change.case$ -- 29
+chr.to.int$ -- 208
+cite$ -- 18
+duplicate$ -- 787
+empty$ -- 950
+format.name$ -- 88
+if$ -- 2631
+int.to.chr$ -- 2
+int.to.str$ -- 15
+missing$ -- 129
+newline$ -- 78
+num.names$ -- 30
+pop$ -- 393
+preamble$ -- 1
+purify$ -- 14
+quote$ -- 2
+skip$ -- 827
+stack$ -- 0
+substring$ -- 488
+swap$ -- 547
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 6
+type$ -- 216
+warning$ -- 0
+while$ -- 47
+width$ -- 0
+write$ -- 174
+(There were 2 warnings)
