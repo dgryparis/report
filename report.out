@@ -6,4 +6,7 @@
 \BOOKMARK [1][-]{section.2.2}{Moving the Simulated MAV}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.3}{Creating the Apriltag Models}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.4}{Realistic Simulation Scenarios}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter*.8}{Bibliography}{}% 9
+\BOOKMARK [0][-]{chapter.3}{Coordinate Frames}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Coordinate Frames in the Simulation }{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Coordinate Frames in the Real System}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter*.8}{Bibliography}{}% 12
