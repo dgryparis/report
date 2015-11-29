@@ -27,15 +27,6 @@ year = {2013}
  address = {Thousand Oaks, CA, USA},
  keywords = {Trajectory generation, control, quadrotors},
 }
-@INPROCEEDINGS{7139420, 
-author={Faessler, M. and Fontana, F. and Forster, C. and Scaramuzza, D.}, 
-booktitle={Robotics and Automation (ICRA), 2015 IEEE International Conference on}, 
-title={Automatic re-initialization and failure recovery for aggressive flight with a monocular vision-based quadrotor}, 
-year={2015}, 
-pages={1722-1729}, 
-keywords={autonomous aerial vehicles;fault tolerant control;helicopters;mobile robots;robot vision;stability;state estimation;telerobotics;altitude stabilization;attitude stabilization;monocular-vision-based quadrotor;quadrotor automatic re-initialization;quadrotor failure recovery;visual state-estimation pipeline;Acceleration;Attitude control;Current measurement;Pipelines;Quaternions;State estimation;Visualization}, 
-doi={10.1109/ICRA.2015.7139420}, 
-month={May},}
 @INPROCEEDINGS{6942940, 
 author={Mueggler, E. and Huber, B. and Scaramuzza, D.}, 
 booktitle={Intelligent Robots and Systems (IROS 2014), 2014 IEEE/RSJ International Conference on}, 
@@ -57,30 +48,12 @@ keywords={aerospace computing;aerospace robotics;control engineering computing;m
 doi={10.1109/MRA.2014.2322295}, 
 ISSN={1070-9932}, 
 month={Sept},}
- @INPROCEEDINGS{6225002, 
- author={Weiss, S. and Achtelik, M.W. and Chli, M. and Siegwart, R.}, 
- booktitle={Robotics and Automation (ICRA), 2012 IEEE International Conference on}, 
- title={Versatile distributed pose estimation and sensor self-calibration for an autonomous MAV}, 
- year={2012}, 
- pages={31-38}, 
- keywords={Kalman filters;aerospace control;autonomous aerial vehicles;motion control;nonlinear filters;pose estimation;position control;position measurement;sensors;velocity control;EKF formulation;autonomous MAV;autonomous flight;disturbance parameter;dynamic maneuver;frequency 1 kHz;inertial sensor;inter-sensor calibration;measurement delay;microaerial vehicle;noise;position control;position measurement;sensor biases;sensor self-calibration;state prediction;velocity;versatile distributed pose estimation;yaw estimate;Calibration;Cameras;Computers;Delay;Position measurement;Robot sensing systems}, 
- doi={10.1109/ICRA.2012.6225002}, 
- ISSN={1050-4729}, 
- month={May},}
 @inproceedings{ducSIES09,
   title={Autonomous quadrotor flight using a vision system and accommodating frames misalignment},
   author={Ducard, G. and D'Andrea, R.},
   booktitle={Industrial embedded systems, 2009. SIES'09. IEEE international symposium on},
   pages={261--264},
   year={2009},
-  organization={IEEE}
-}
-@inproceedings{schICRA10,
-  title={Synchronizing the motion of a quadrocopter to music},
-  author={Schollig, A and Augugliaro, Federico and Lupashin, Sergei and D'Andrea, Raffaello},
-  booktitle={Robotics and Automation (ICRA), 2010 IEEE International Conference on},
-  pages={3355--3360},
-  year={2010},
   organization={IEEE}
 }
 @inproceedings{olson2011tags,
@@ -100,6 +73,13 @@ title = {{Online code repository, https://github.com/ethz-asl/mav\textunderscore
 date = {2015},
 url = {https://github.com/ethz-asl/mav_demos},
 }
+https://github.com/ethz-asl/minkindr/wiki/Common-Transformation-Conventions
+@online{FrameNamingConvention,
+ALTauthor = {ASL},
+title = {{Online repository, https://github.com/ethz-asl/minkindr/wiki/Common-Transformation-Conventions}},
+date = {2015},
+url = {https://github.com/ethz-asl/minkindr/wiki/Common-Transformation-Conventions},
+}
 @online{GazeboSimulator,
 ALTauthor = {Open Source Robotics Foundation},
 title = {{Open Source Robotics Foundation, Gazebo Simulator http://gazebosim.org/}},
@@ -117,6 +97,12 @@ title = {Open Source Robotics Foundation, http://wiki.ros.org/apriltags\textunde
 date = {2014},
 url = {http://wiki.ros.org/apriltags\textunderscore ros}
 }
+@online{RotorsSimulator,
+ALTauthor = {Open Source Robotics Foundation},
+title = {{Open Source Robotics Foundation, RotorS Simulator http://gazebosim.org/}},
+date = {2014},
+url = {http://wiki.ros.org/rotors_simulator},
+}
 @conference {288,
 title = {ROS: an open-source Robot Operating System},
 booktitle = {ICRA Workshop on Open Source Software},
@@ -124,3 +110,41 @@ year = {2009},
 attachments = {http://www.willowgarage.com/sites/default/files/icraoss09-ROS.pdf},
 author = {Morgan Quigley and Ken Conley and Brian P. Gerkey and Josh Faust and Tully Foote and Jeremy Leibs and Rob Wheeler and Andrew Y. Ng}
 }
+@TECHREPORT{hoogervorst2015bsc,
+       author = {Hoogervorst, R. W. P.},
+        month = jul,
+        title = {Collaborative position control of an UAV using vision and IMU data},
+         type = {BSc report 017RaM2015},
+         year = {2015},
+  institution = {University of Twente},
+     abstract = {Pose estimation for UAVs is usually done using internal sensors. Often a filter is used to combine different sensors, e.g. a camera on the UAV and its IMU. However, sensors on the UAV have limitations. For instance the camera on the UAV needs to detect keypoints, which might not always be available in real-life applications.
+
+Therefore it is investigated if the use of an external UAV can aid in the pose estimation of the drone. The camera fromthe externalUAVwill detect the pose of amarker on themainUAV. This vision measurement and the IMU fromthe mainUAV are fused using a Kalman Filter to provide a reliable pose estimation. Using this pose estimation, control experiments are performed to
+validate if the UAV can be controlled using this estimate.
+
+Results show that this is possible, first when the external UAV is at a fixed position and also when the external UAV is flying next to the main UAV. The control performance decreases during a simultaneous flight, but control is still possible. A limitation is that the UAV needs to stay in view of the camera, otherwise there is a chance of the UAV moving out of vision, causing it
+to drift off and crash.}
+}
+@TECHREPORT{lingkevin2014,
+author = {Kevin Ling},
+month = sep,
+title = {Precision Landing of a Quadrotor UAV on a Moving Target Using Low-Cost Sensors},
+type = {Msc Thesis},
+year = {2014},
+institution = {University of Waterloo},
+abstract = {With the use of unmanned aerial vehicles (UAVs) becoming more widespread, a need for precise autonomous landings has arisen. In the maritime setting, precise autonomous landings will help to provide a safe way to recover UAVs deployed from a ship. On land, numerous applications have been proposed for UAV and unmanned ground vehicle (UGV) teams where autonomous docking is required so that the UGVs can either recover or service a UAV in the ﬁeld. Current state of the art approaches to solving the problem rely on expensive inertial measurement sensors and RTK or diﬀerential GPS systems. However, such a solution is not practical for many UAV systems.
+ 
+ A framework to perform precision landings on a moving target using low-cost sensors is proposed in this thesis. Vision from a downward facing camera is used to track a target on the landing platform and generate high quality relative pose estimates. The landing procedure consists of three stages. First, a rendezvous stage commands the quadrotor on a path to intercept the target. A target acquisition stage then ensures that the quadrotor is tracking the landing target. Finally, visual measurements of the relative pose to the landing target are used in the target tracking stage where control and estimation are performed in a body-planar frame, without the use of GPS or magnetometer measurements. A comprehensive overview of the control and estimation required to realize the three stage landing approach is presented.
+ 
+ Critical parts of the landing framework were implemented on an AscTec Pelican testbed. The AprilTag visual ﬁducial system is chosen for use as the landing target. Implementation details to improve the AprilTag detection pipeline are presented. Simulated and experimen- tal results validate key portions of the landing framework. The novel relative estimation scheme is evaluated in an indoor positioning system. Tracking and landing on a moving target is demonstrated in an indoor environment. Outdoor tests also validate the target tracking performance in the presence of wind.	en_US}
+}
+@ARTICLE { schaves-2015a,
+    AUTHOR = { Stephen M. Chaves and Ryan W. Wolcott and Ryan M. Eustice },
+    TITLE = { {NEEC} research: Toward {GPS}-denied landing of unmanned aerial vehicles on ships at sea },
+    JOURNAL = { Naval Engineers Journal },
+    YEAR = { 2015 },
+    VOLUME = { 127 },
+    NUMBER = { 1 },
+    PAGES = { 23--35 },
+}
+

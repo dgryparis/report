@@ -1,12 +1,14 @@
 \BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 1
 \BOOKMARK [0][-]{chapter*.4}{Symbols}{}% 2
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
-\BOOKMARK [0][-]{chapter.2}{Description of the early packages used in simulation}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Connecting the Camera with ROS}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Moving the Simulated MAV}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.3}{Creating the Apriltag Models}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.4}{Realistic Simulation Scenarios}{chapter.2}% 8
-\BOOKMARK [0][-]{chapter.3}{Coordinate Frames}{}% 9
-\BOOKMARK [1][-]{section.3.1}{Coordinate Frames in the Simulation }{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.2}{Coordinate Frames in the Real System}{chapter.3}% 11
-\BOOKMARK [0][-]{chapter*.8}{Bibliography}{}% 12
+\BOOKMARK [1][-]{section.1.1}{Summary}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Related Work}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Description of the early packages used in simulation}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Connecting the Camera with ROS}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.2}{Moving the Simulated MAV}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Creating the Apriltag Models}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Realistic Simulation Scenarios}{chapter.2}% 10
+\BOOKMARK [0][-]{chapter.3}{Coordinate Frames}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Coordinate Frames in the Simulation }{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Coordinate Frames in the Real System}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter*.8}{Bibliography}{}% 14
