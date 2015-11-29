@@ -1,4 +1,18 @@
 \chapter{Introduction}
 \label{sec:introduction}
 
+During the past decades, robotics has evolved from the heavy industrial manipulators, that worked only to a very specific structured environment, to mobile robots that navigate themselves to various unstructured environments. A method that has gained a lot of attention lately, is localization and motion of the robot based only on information coming from cameras.
+
+The reason for choosing cameras as the main source of information in modern robotics, and as in our specific example to an MAV, is that they provide an abundance of information while they weight less, their power consumption is low compared to other kinds of sensors and their prices keep reducing. Furthermore, nowadays exist advanced computer vision algorithms that allow us to robustly extract the necessary information and of course the proper hardware that allows the on board and real-time processing of the acquired data.  
+
+Furthermore, the scientific interest regarding autonomous mobile robots, is strongly attracted to low weight multi rotor Micro Aerial Vehicles (MAVs). Some of their merits over conventional designs such as fixed wing platforms are their ability for vertical take off and landing, they can hover over specific areas as long as their energy source allows and their ability to perform tight maneuvers in confined spaced. Their wide commercial availability combined with their prices which are considerably reduced compared with a few years ago make them a very attractive platform for experimentation. Their uses, which are rapidly increased, include parcel delivery, inspection of structures, search and rescue operations and several more.     
+
+In this project, the AscTec's Firefly MAV is used, to present the realization of the MAV's high level control only with the use of apriltag markers. Thus, the MAV uses only the data available from its onboard sensors to deduce what it must do based on the user's visual commands. Various motion scenaria were implemented. First the whole concept was build in simulation, using the RotorS simulator created by the ASL \cite{RotorsSimulator} and then it was implemented in the real system.  
+
+\section{Summary}
+\label{sec:summary}
  
+\section{Related Work}
+\label{sec:related_work}
+  
+Many of the teams that work with MAVs use the VICON system to calculate the pose of their MAV and based on that to perform various motions, such examples are \cite{Mellinger:2012:TGC:2190635.2190636}, \cite{ducSIES09}. Other approaches involve pose estimation and navigation data taken from onboard cameras or dynamic vision sensors such as \cite{6880770}, \cite{6942940}. Apriltags, were used by relatively few other teams in order to provide robust pose estimates to the MAVs either in the case of landing \cite{schaves-2015a}, \cite{lingkevin2014} or in case of a pair of MAVs to provide visual pose estimate in case of a sensor failure \cite{hoogervorst2015bsc}.

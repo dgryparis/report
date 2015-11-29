@@ -32,7 +32,7 @@ Thus, when the user holds the marker at the same height as the camera, the MAV d
 
 \begin{figure}
    \centering
-   \includegraphics[width=0.98\textwidth]{images/mav_demo_camera_rosgraph.pdf}
+   \includegraphics[width=0.97\textwidth]{images/cam_firefly_sim.pdf}
    \caption{Ein Bild}
    \label{pics:mav_demo_camera_rosgraph}
 \end{figure}
@@ -45,16 +45,28 @@ In order to make the simulation realistic, the MAV should detect the Apriltags b
 \section{Realistic Simulation Scenarios}
 \label{sec: apriltagFireflySimulation}
 
-Before moving to the real system, were implemented some more realistic simulation scenarios so as to study the MAV's behavior under various circumstances. In this case the user inserts different markers inside the simulated world and the MAV performs a variety of motions with respect to the different markers it detects from its own camera. In order to perform different motions the MAV detects the id of each tag, and executes the predefined motions. It should be mentioned, that at each time only one Apriltag should be detected from the MAV's sensor so as to have a smooth operation.
+Before moving to the real system, were implemented some more realistic simulation scenarios so as to study the MAV's behavior under various circumstances. In this case the user inserts different markers inside the simulated world and the MAV performs a variety of motions with respect to the different markers it detects from its own camera. In order to perform different motions the MAV detects the id of each tag, and executes the predefined motions as presented in image \ref{pics:apriltags_firefly_simulation_screen}.  It should be mentioned, that at each time only one Apriltag should be detected from the MAV's sensor so as to have a smooth operation.
+
+\begin{figure}
+   \centering
+   \includegraphics[width=0.98\textwidth]{images/apriltags_firefly_simulation_screen.pdf}
+   \caption{Ein Bild}
+   \label{pics:apriltags_firefly_simulation_screen}
+\end{figure}
 
 The default motion, consists of the user moving a marker in front of the computer's camera which controls the pose of the Apriltag in the simulation. The MAV is programmed to follow the marker, by having adequate distance so as to guarantee the user's safety in the real world system. The predefined safety distance is set by the user at the launch of the simulation, in the case that the user enters a values less than a predefined threshold, the program automatically sets the input value to the threshold. When the user rotates the marker in the z axis (yaw) by $\psi$ degrees the MAV performs a circle-like motion with respect to the marker's position. 
 
-Furthermore, the MAV is capable of performing take-offs and landings whenever the user wants. When the user wants to land the MAV, he just has to present a specific marker in front of the camera. The exact same procedure, but with a different marker, is followed for making the MAV hovering again. The program stores the last x,y coordinates of The MAV before the landing command and automatically sets the desired height at 1m. 
+Furthermore, the MAV is capable of performing take-offs and landings whenever the user wants. When the user wants to land the MAV, he just has to present a specific marker in front of the camera. The exact same procedure, but with a different marker, is followed for making the MAV hovering again. The program stores the last x,y and z coordinates of The MAV before the landing command. It should be mentioned that in order to switch from one kind of motion to another the user must show to the MAV a specific marker that triggers a reset state. In this reset state, the MAV goes back to its starting position and height, just as before it started each motion. It should be mentioned, that throughout the simulation the MAV's inertial measurement frame is assumed to be initialized relative to the ground.
 
-//Depending on the implementation //Right now square    
+In addition to the aforementioned motion patterns, the MAV currently performs two more motions. First it is programmed to create a square in the air. Taking as initial position the current coordinates of the MAV, it computes the other vertices so as the length of each side of the square to be 1m long. The MAV will continue to implement the motion until the user presents the it the marker that triggers the reset state.  The second motion, performs the ASL's logo in the air \ref{pics:asl_logo_motion}. Again starting from its initial position the Firefly computes the vertices so as to formulate the logo in the air, upon completion the MAV returns to its initial position.  
 
 
-
+\begin{figure}
+   \centering
+   \includegraphics[width=0.97\textwidth]{images/asl_logo_motion.pdf}
+   \caption{ASL logo}
+   \label{pics:asl_logo_motion}
+\end{figure}
 
 
 
