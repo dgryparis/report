@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Summary}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Related Work}{1}{section.1.2}
-\contentsline {chapter}{\numberline {2}Description of the early packages used in simulation}{3}{chapter.2}
+\contentsline {chapter}{\numberline {2}Description of the packages used in simulation}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Connecting the Camera with ROS}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Moving the Simulated MAV}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Creating the Apriltag Models}{4}{section.2.3}
