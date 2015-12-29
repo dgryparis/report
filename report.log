@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  6 DEC 2015 18:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  29 DEC 2015 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,7 +1217,14 @@ LaTeX Info: Redefining \cpagerefrange on input line 2230.
 LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `pics:tag36h11' multiply defined.
+
+
+LaTeX Warning: Label `pics:tag36h11@cref' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -1234,8 +1241,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 28.
@@ -1305,51 +1311,51 @@ LaTeX Info: Redefining \nameref on input line 28.
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/eth_logo.pdf, id=63, 8857.09pt x 2400.97pt>
+<images/eth_logo.pdf, id=91, 8857.09pt x 2400.97pt>
 File: images/eth_logo.pdf Graphic file (type pdf)
  <use images/eth_logo.pdf>
-Package pdftex.def Info: images/eth_logo.pdf used on input line 49.
+Package pdftex.def Info: images/eth_logo.pdf used on input line 48.
 (pdftex.def)             Requested size: 157.31242pt x 42.67912pt.
 
-Overfull \vbox (10.27916pt too high) detected at line 49
+Overfull \vbox (10.27916pt too high) detected at line 48
  []
 
-<images/asl_logo.pdf, id=64, 429.605pt x 196.735pt>
+<images/asl_logo.pdf, id=92, 429.605pt x 196.735pt>
 File: images/asl_logo.pdf Graphic file (type pdf)
  <use images/asl_logo.pdf>
-Package pdftex.def Info: images/asl_logo.pdf used on input line 49.
+Package pdftex.def Info: images/asl_logo.pdf used on input line 48.
 (pdftex.def)             Requested size: 62.13052pt x 28.45274pt.
 
-Overfull \vbox (24.60004pt too high) detected at line 49
+Overfull \vbox (24.60004pt too high) detected at line 48
  []
 
 
-Overfull \hbox (100.27724pt too wide) in paragraph at lines 49--49
+Overfull \hbox (100.27724pt too wide) in paragraph at lines 48--48
  |  [] 
  []
 
 
-Overfull \hbox (122.7123pt too wide) in paragraph at lines 49--49
+Overfull \hbox (122.7123pt too wide) in paragraph at lines 48--48
  []|  [][][] 
  []
 
 
-Overfull \hbox (122.7123pt too wide) in paragraph at lines 49--49
+Overfull \hbox (122.7123pt too wide) in paragraph at lines 48--48
  []|  [][][] 
  []
 
 
-Overfull \hbox (105.9677pt too wide) in paragraph at lines 49--49
+Overfull \hbox (105.9677pt too wide) in paragraph at lines 48--48
  []|  [] 
  []
 
@@ -1391,21 +1397,21 @@ quette . pdf$[]\OT1/cmr/m/n/10 ). The
 
 ] (./chapters/introduction.tex
 Chapter 1.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \cleardoublepage
-                      [1
+l.23 
+      [1
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \cleardoublepage
-                      [2] (./chapters/SimulationPackages.tex
+l.87 \cleardoublepage
+                      [2] (./chapters/SystemDescription.tex
 Chapter 2.
-<images/tag36h11_im_large.pdf, id=173, 397.43532pt x 397.43532pt>
+<images/tag36h11_im_large.pdf, id=214, 397.43532pt x 397.43532pt>
 File: images/tag36h11_im_large.pdf Graphic file (type pdf)
 
 <use images/tag36h11_im_large.pdf>
@@ -1415,124 +1421,210 @@ Package pdftex.def Info: images/tag36h11_im_large.pdf used on input line 13.
 
 
 ]
-<images/mav_demo_camera.pdf, id=185, 1922.18124pt x 1098.1025pt>
-File: images/mav_demo_camera.pdf Graphic file (type pdf)
+<images/AscTecFirefly.pdf, id=224, 361.35pt x 203.76125pt>
+File: images/AscTecFirefly.pdf Graphic file (type pdf)
 
-<use images/mav_demo_camera.pdf>
-Package pdftex.def Info: images/mav_demo_camera.pdf used on input line 28.
-(pdftex.def)             Requested size: 271.01248pt x 154.82242pt.
+<use images/AscTecFirefly.pdf>
+Package pdftex.def Info: images/AscTecFirefly.pdf used on input line 32.
+(pdftex.def)             Requested size: 198.74359pt x 112.06902pt.
 
-<images/cam_firefly_sim.pdf, id=186, 562.36435pt x 226.62549pt>
-File: images/cam_firefly_sim.pdf Graphic file (type pdf)
 
-<use images/cam_firefly_sim.pdf>
-Package pdftex.def Info: images/cam_firefly_sim.pdf used on input line 35.
-(pdftex.def)             Requested size: 350.50992pt x 141.25327pt.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 47.
 
-Underfull \vbox (badness 3428) has occurred while \output is active []
+[4 <./images/tag36h11_im_large.pdf> <./images/AscTecFirefly.pdf
 
- [4 <./images/tag36h11_im_large.pdf> <./images/mav_demo_camera.pdf
-
-pdfTeX warning: pdflatex (file ./images/mav_demo_camera.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->]
-<images/apriltags_firefly_simulation_screen.pdf, id=211, 2039.36502pt x 873.153
-32pt>
-File: images/apriltags_firefly_simulation_screen.pdf Graphic file (type pdf)
- <use images/apriltags_firefly_simulation_screen.pdf>
-Package pdftex.def Info: images/apriltags_firefly_simulation_screen.pdf used on
- input line 52.
-(pdftex.def)             Requested size: 354.12144pt x 151.60503pt.
- [5 <./images/cam_firefly_sim.pdf> <./images/apriltags_firefly_simulation_scree
-n.pdf
-
-pdfTeX warning: pdflatex (file ./images/apriltags_firefly_simulation_screen.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
->] <images/asl_logo_motion.pdf, id=232, 331.99821pt x 130.21614pt>
-File: images/asl_logo_motion.pdf Graphic file (type pdf)
-
-<use images/asl_logo_motion.pdf>
-Package pdftex.def Info: images/asl_logo_motion.pdf used on input line 66.
-(pdftex.def)             Requested size: 350.50992pt x 137.48799pt.
-) [6 <./images/asl_logo_motion.pdf>]
-(./chapters/CoordinateFrames.tex
-Chapter 3.
-<images/world_camera_frame.pdf, id=248, 243.91705pt x 112.21878pt>
+pdfTeX warning: pdflatex (file ./images/AscTecFirefly.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>] <images/world_camera_frame.pdf, id=250, 243.91705pt x 112.21878pt>
 File: images/world_camera_frame.pdf Graphic file (type pdf)
 
 <use images/world_camera_frame.pdf>
-Package pdftex.def Info: images/world_camera_frame.pdf used on input line 27.
+Package pdftex.def Info: images/world_camera_frame.pdf used on input line 58.
 (pdftex.def)             Requested size: 354.12144pt x 162.92708pt.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 32.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 63.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 32.
-
-[7
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 63.
 
 
-]
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 63.
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 37.
+[5 <./images/world_camera_frame.pdf>]
 
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 39.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 39.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 39.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 71.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 46.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 71.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 46.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 71.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 46.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 82.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 46.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 82.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 46.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 82.
 
 
-<images/coordinate_frame_representation_v3.pdf, id=264, 531.48569pt x 323.70561
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 82.
+
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 82.
+
+
+<images/coordinate_frame_representation_v3.pdf, id=274, 530.76399pt x 357.61676
 pt>
 File: images/coordinate_frame_representation_v3.pdf Graphic file (type pdf)
  <use images/coordinate_frame_representation_v3.pdf>
 Package pdftex.def Info: images/coordinate_frame_representation_v3.pdf used on 
-input line 51.
-(pdftex.def)             Requested size: 357.73846pt x 217.88925pt.
-) [8 <./images/world_camera_frame.pdf>] [9 <./images/coordinate_frame_represent
-ation_v3.pdf>] [10
+input line 87.
+(pdftex.def)             Requested size: 357.73846pt x 241.03711pt.
+) [6 <./images/coordinate_frame_representation_v3.pdf>] (./chapters/SystemSetup
+.tex
+Chapter 3.
+[7
+
+
+] <images/mav_demo_camera.pdf, id=306, 1922.18124pt x 1098.1025pt>
+File: images/mav_demo_camera.pdf Graphic file (type pdf)
+
+<use images/mav_demo_camera.pdf>
+Package pdftex.def Info: images/mav_demo_camera.pdf used on input line 25.
+(pdftex.def)             Requested size: 271.01248pt x 154.82242pt.
+
+<images/sim_atag_mavdet_win.pdf, id=307, 2089.54626pt x 1090.93988pt>
+File: images/sim_atag_mavdet_win.pdf Graphic file (type pdf)
+
+<use images/sim_atag_mavdet_win.pdf>
+Package pdftex.def Info: images/sim_atag_mavdet_win.pdf used on input line 43.
+(pdftex.def)             Requested size: 354.12144pt x 184.8747pt.
+ [8 <./images/mav_demo_camera.pdf>]
+<images/cam_firefly_sim.pdf, id=324, 562.36435pt x 226.62549pt>
+File: images/cam_firefly_sim.pdf Graphic file (type pdf)
+
+<use images/cam_firefly_sim.pdf>
+Package pdftex.def Info: images/cam_firefly_sim.pdf used on input line 54.
+(pdftex.def)             Requested size: 354.12144pt x 142.70909pt.
+ [9 <./images/sim_atag_mavdet_win.pdf> <./images/cam_firefly_sim.pdf
+
+pdfTeX warning: pdflatex (file ./images/cam_firefly_sim.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>]) [10] (./chapters/ExperimentalResults.tex
+Chapter 4.
+
+<images/MAV_controller_input_rotation_tracking.pdf, id=355, 1396.29271pt x 721.
+10425pt>
+File: images/MAV_controller_input_rotation_tracking.pdf Graphic file (type pdf)
+
+ <use images/MAV_controller_input_rotation_tracking.pdf>
+Package pdftex.def Info: images/MAV_controller_input_rotation_tracking.pdf used
+ on input line 15.
+(pdftex.def)             Requested size: 361.34999pt x 186.61343pt.
+ [11
+
 
 ]
-(./report.bbl [11
+<images/sim_z_axis_during_rotation.pdf, id=365, 1396.29271pt x 721.10425pt>
+File: images/sim_z_axis_during_rotation.pdf Graphic file (type pdf)
 
-]) [12]
+<use images/sim_z_axis_during_rotation.pdf>
+Package pdftex.def Info: images/sim_z_axis_during_rotation.pdf used on input li
+ne 24.
+(pdftex.def)             Requested size: 354.12144pt x 182.88336pt.
+
+<images/sim_linear_motion.pdf, id=366, 1396.29271pt x 753.47115pt>
+File: images/sim_linear_motion.pdf Graphic file (type pdf)
+
+<use images/sim_linear_motion.pdf>
+Package pdftex.def Info: images/sim_linear_motion.pdf used on input line 31.
+(pdftex.def)             Requested size: 361.34999pt x 194.98961pt.
+ [12 <./images/MAV_controller_input_rotation_tracking.pdf> <./images/sim_z_axis
+_during_rotation.pdf
+
+pdfTeX warning: pdflatex (file ./images/sim_z_axis_during_rotation.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]
+<images/real_MAV_odom_controller_bag3.pdf, id=387, 1396.29271pt x 721.10425pt>
+File: images/real_MAV_odom_controller_bag3.pdf Graphic file (type pdf)
+
+<use images/real_MAV_odom_controller_bag3.pdf>
+Package pdftex.def Info: images/real_MAV_odom_controller_bag3.pdf used on input
+ line 63.
+(pdftex.def)             Requested size: 361.34999pt x 186.61343pt.
+
+<images/real_euclidean_distance.pdf, id=388, 1396.29271pt x 753.47115pt>
+File: images/real_euclidean_distance.pdf Graphic file (type pdf)
+
+<use images/real_euclidean_distance.pdf>
+Package pdftex.def Info: images/real_euclidean_distance.pdf used on input line 
+70.
+(pdftex.def)             Requested size: 361.34999pt x 194.98961pt.
+ [13 <./images/sim_linear_motion.pdf>]
+[14 <./images/real_MAV_odom_controller_bag3.pdf> <./images/real_euclidean_dista
+nce.pdf
+
+pdfTeX warning: pdflatex (file ./images/real_euclidean_distance.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
+>] <images/real_experiment_v1.pdf, id=424, 1342.84964pt x 754.9766pt>
+File: images/real_experiment_v1.pdf Graphic file (type pdf)
+
+<use images/real_experiment_v1.pdf>
+Package pdftex.def Info: images/real_experiment_v1.pdf used on input line 79.
+(pdftex.def)             Requested size: 361.34999pt x 203.1552pt.
+) [15 <./images/real_experiment_v1.pdf>]
+[16
+
+] (./chapters/cocnlusions.tex
+Chapter 5.
+) [17
+
+] [18
+
+] (./report.bbl
+** WARNING: IEEEtranN.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtranN.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+
+Overfull \hbox (46.0953pt too wide) in paragraph at lines 77--80
+[]\OT1/cmr/m/n/10 RobornSwarm Carnegie Mel-lon, https://sites.google.com/site/m
+rsdproject201415teamc/. 
+ []
+
+[19
+
+]) [20]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
  (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: CA013927ED81A44E3AA3A30B226C8250;891.
+(rerunfilecheck)             Checksum: 01E645F046C0E1C9439496A6B6614CE4;1324.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 20288 strings out of 495028
- 364755 string characters out of 6181496
- 475293 words of memory out of 5000000
- 22956 multiletter control sequences out of 15000+600000
- 14183 words of font info for 53 fonts, out of 8000000 for 9000
+ 20397 strings out of 495028
+ 367203 string characters out of 6181496
+ 474293 words of memory out of 5000000
+ 23024 multiletter control sequences out of 15000+600000
+ 14788 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 65i,15n,59p,2284b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,59p,2587b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -1545,11 +1637,12 @@ msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (20 pages, 3858753 bytes).
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
+Output written on report.pdf (28 pages, 8146334 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 434 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

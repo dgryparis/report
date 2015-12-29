@@ -1,0 +1,6 @@
+\chapter{Conclusion}
+\label{sec:cocnlusion}
+
+In this thesis, we wanted to control a MAV through visual commands. In order to achieve this goal, we followed a step by step procedure. First every task was built and tested in simulation, by gradually building more and more realistic simulation scenari. We started from simply moving the MAV from the Apriltag pose as detected from the USB camera, then we created the marker models for the Gazebo simulator, these models were controlled by the pose of the real marker detections, and finally we controlled the pose of the MAV only by the Apriltag detections from its simulated camera sensor. After many experiments in simulation, we were ready to proceed to the real world, where we tested our algorithms on an AscTec's Firefly MAV. 
+
+From the experiments conducted, both in simulation and in the real world, we were able to validate both the ability of the algorithm to leave a sufficient distance between the marker and the MAV and also its ability to command the MAV to follow the marker under various motion scenari. Furthermore, high detection rates were achieved in all experiments.

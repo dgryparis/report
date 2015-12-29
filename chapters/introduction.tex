@@ -1,18 +1,36 @@
 \chapter{Introduction}
 \label{sec:introduction}
 
-During the past decades, robotics has evolved from the heavy industrial manipulators, that worked only to a very specific structured environment, to mobile robots that navigate themselves to various unstructured environments. A method that has gained a lot of attention lately, is localization and motion of the robot based only on information coming from cameras.
+During the past decades, robotics has evolved from the heavy industrial manipulators, that worked only to a very specific structured environment doing specific repetitive tasks, to mobile robots that navigate themselves to unstructured environments and they are able to perform a variety of tasks. A particular field of robotics that has gained a lot of attention lately, is localization and motion of the mobile robot based only on information coming from its own sensors, and particularly its cameras.
 
-The reason for choosing cameras as the main source of information in modern robotics, and as in our specific example to an MAV, is that they provide an abundance of information while they weight less, their power consumption is low compared to other kinds of sensors and their prices keep reducing. Furthermore, nowadays exist advanced computer vision algorithms that allow us to robustly extract the necessary information and of course the proper hardware that allows the on board and real-time processing of the acquired data.  
+The reason for choosing cameras as the main source of information in modern robotics, and as in our specific case to an MAV, is that they provide an abundance of information while their weight, power consumption and price is considerably less compared to other kinds of sensors, such as laser scanners. Furthermore, nowadays exist advanced computer vision algorithms that allow us to robustly extract the necessary information and of course the proper hardware that allows the on board and fast processing of the acquired data.  
 
-Furthermore, the scientific interest regarding autonomous mobile robots, is strongly attracted to low weight multi rotor Micro Aerial Vehicles (MAVs). Some of their merits over conventional designs such as fixed wing platforms are their ability for vertical take off and landing, they can hover over specific areas as long as their energy source allows and their ability to perform tight maneuvers in confined spaced. Their wide commercial availability combined with their prices which are considerably reduced compared with a few years ago make them a very attractive platform for experimentation. Their uses, which are rapidly increased, include parcel delivery, inspection of structures, search and rescue operations and several more.     
+Furthermore, the scientific interest regarding autonomous mobile robots, is strongly attracted to low weight multi rotor MAVs. Some of their merits over conventional designs, such as fixed wing platforms, are their ability for vertical take off and landing, they can hover over specific areas as long as their energy source allows and their ability to perform tight maneuvers in confined spaces. Their wide commercial availability combined with their reduced prices makes them a very attractive platform for experimentation. Their uses, which are rapidly increasing, include parcel delivery, inspection of structures, search and rescue operations and of course use by hobbyists for various other tasks.     
 
-In this project, the AscTec's Firefly MAV is used, to present the realization of the MAV's high level control only with the use of apriltag markers. Thus, the MAV uses only the data available from its onboard sensors to deduce what it must do based on the user's visual commands. Various motion scenaria were implemented. First the whole concept was build in simulation, using the RotorS simulator created by the ASL \cite{RotorsSimulator} and then it was implemented in the real system.  
+In this project, the AscTec's Firefly MAV is used, to present the realization of the MAV's high level control only with the use of visual commands. Thus, the MAV uses only the data available from its onboard sensors to deduce its desired pose in the three dimensional world based on the user's visual commands. These commands are given by the Apriltag markers. First the whole system was build in simulation, using the RotorS simulator created by the ASL \cite{RotorsSimulator} and then the developed algorithms were evaluated in the real system. 
+
 
 \section{Summary}
 \label{sec:summary}
+
+In \autoref{sec:SystemDescription} is a thorough system description, providing information about the visual markers, the MAV used and the frame analysis of the system. In \autoref{sec:SystemSetup}, comes the setup of the system, explaining the various packets written in order to make the system run in simulation. Finally in \autoref{sec:ExperimentalResults}, there will be presented the experimental results both from the simulated and the real system.   
+ 
  
 \section{Related Work}
 \label{sec:related_work}
+
+In the recent years, many teams have been able to perform various kinds of motions with the MAVs (\cite{5509452},\cite{hehIFAC11},\cite{trajectoryGenerationAndControl}), but all of them heavily relied on the use of external motion capture systems (VICON\protect\footnotemark) and their maneuvers are generally predefined. In our case, we wanted a system that would be able to "localize" itself relative to user hand-held visual markers, that would be able to be detected from the MAV's camera sensor and not by an external motion caption system like in \cite{dandreaTedTalk}. Thus, the Apriltag markers\cite{olson2011tags} were selected. Many teams have used Apriltags for providing localization data to their robots. Such examples are \cite{lafaroLab} and \cite{robornSwam}, they use them to provide localization data in ground vehicles with different configurations, in the first case the Apriltags are statically attached to the ceiling of the lab while in the latter are attached on the robots and on the walls of the lab. At the Carnegie Mellon team \cite{robornSwam}, their use is to provide both relative localization among the ground vehicles but also providing absolute localization information from the static located markers. Furthermore, in \cite{lingkevin2014} and \cite{schaves-2015a} they use the aforementioned markers in order to land the MAVs towards, static or moving landing sights. Other uses of the marker include  \cite{hoogervorst2015bsc} where they were used to compensate sensor loss in a different MAV by providing its 6 DOF pose estimate based on the marker detection and in \cite{6842304} where it augments the localization data and compensates the IMU data drift. 
+
+
+
+
   
-Many of the teams that work with MAVs use the VICON system to calculate the pose of their MAV, thus to localize it, and based on that to perform various motions, such examples are \cite{Mellinger:2012:TGC:2190635.2190636}, \cite{ducSIES09}. The VICON system gives the advantage of very precise position knowledge, but with the price that it can only be used structured environments that have multiple VICON cameras installed and also IR reflective markers on the MAVs, furthermore it is still expensive. Other approaches involve pose estimation and navigation data taken from onboard cameras or dynamic vision sensors such as \cite{6880770}, \cite{6942940}. Apriltags, were used by relatively few other teams in order to provide robust pose estimates to the MAVs either in the case of landing \cite{schaves-2015a}, \cite{lingkevin2014} or in case of a pair of MAVs to provide visual pose estimate in case of a sensor failure \cite{hoogervorst2015bsc}. In our case, we used different Apriltags detected from the MAV's camera to give it various commands regarding its pose.
+\footnotetext{http://www.vicon.com}
+  
+  
+  
+  
+  
+  
+
+
