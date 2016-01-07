@@ -4,3 +4,9 @@
 In this thesis, we wanted to control a MAV through visual commands. In order to achieve this goal, we followed a step by step procedure. First every task was built and tested in simulation, by gradually building more and more realistic simulation scenari. We started from simply moving the MAV from the Apriltag pose as detected from the USB camera, then we created the marker models for the Gazebo simulator, these models were controlled by the pose of the real marker detections, and finally we controlled the pose of the MAV only by the Apriltag detections from its simulated camera sensor. After many experiments in simulation, we were ready to proceed to the real world, where we tested our algorithms on an AscTec's Firefly MAV. 
 
 From the experiments conducted, both in simulation and in the real world, we were able to validate both the ability of the algorithm to leave a sufficient distance between the marker and the MAV and also its ability to command the MAV to follow the marker under various motion scenari. Furthermore, high detection rates were achieved in all experiments.
+
+
+\section{Future Work}
+\label{sec:futureWork}
+
+During this project, many ideas came up that could ot be implemented due to the pressing deadlines. First of all, instead of using Apriltags as visual markers, a gesture recognition algorithm could be implemented. With that the user would be able to control the MAV just by waving his or her hands, without having to hold any other markers. Furthermore, the algorithm could be modified so as to ignore any marker detections that are further than the specific distance that causes the orientation misdetections in the Apriltag detection algorithm. By doing the aforementioned and by also applying a low pass filtering in the desired position data that are derived from the detection algorithm, we could obtain much smoother paths and also make the MAV turn with respect to the detected yaw.

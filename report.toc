@@ -3,19 +3,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Summary}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Related Work}{2}{section.1.2}
-\contentsline {chapter}{\numberline {2}System Description}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Apriltags}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}AscTec Firefly}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Coordinate Frames}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Coordinate Frames in the Simulation }{5}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Coordinate Frames in the Real System}{6}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}System Setup}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Connecting the Camera with ROS}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Moving the Simulated MAV}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Creating the Apriltag Models}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}Realistic Simulation Scenarios}{8}{section.3.4}
-\contentsline {chapter}{\numberline {4}Experimental Results}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Experiments Conducted in Simulation}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Experiments Conducted in the Real System}{12}{section.4.2}
-\contentsline {chapter}{\numberline {5}Conclusion}{17}{chapter.5}
-\contentsline {chapter}{Bibliography}{20}{chapter*.8}
+\contentsline {chapter}{\numberline {2}System Description}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Apriltags}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}AscTec Firefly}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Coordinate Frames}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Coordinate Frames in the Simulation }{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Coordinate Frames in the Real System}{8}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}System Setup}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Connecting the Camera with ROS}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Moving the Simulated MAV}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Realistic Simulation Scenarios}{12}{section.3.3}
+\contentsline {chapter}{\numberline {4}Experimental Results}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Experiments Conducted in Simulation}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Experiments Conducted in the Real System}{15}{section.4.2}
+\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Future Work}{19}{section.5.1}
+\contentsline {chapter}{Bibliography}{22}{chapter*.8}
