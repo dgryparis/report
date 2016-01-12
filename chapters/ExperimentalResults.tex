@@ -20,7 +20,7 @@ We prove that the MAV always leaves an almost constant distance between itself a
 \begin{figure}
    \centering
    \includegraphics[width=0.98\textwidth]{images/sim_z_axis_during_rotation.pdf}
-   \caption{The controller input with respect to z-axis versus time during the three rotation experiments, that were conducted in simulation. The most oscillations are performed at the slowest rotation, while the least at the fastest.}
+   \caption{The controller input with respect to z-axis versus time during the three rotation experiments, that were conducted in simulation. The z position oscillates more at slower rotation speeds, and less at faster rotation speeds. The more oscillations at slower rotation speeds are caused from the fact that the MAV has to halt mid-air in order to wait the Apriltag rotate itself so as to get new detection data.}
    \label{pics:zRotationCOntroller}
 \end{figure}
 
@@ -32,19 +32,19 @@ In order to validate our system, experiments with a real MAV were conducted. The
 
 \footnotetext{https://github.com/ethz-asl/rovio}
 
-Four experiments were performed, in the first three the ability of the MAV to follow a "normally" moving target was tested, while in the fourth experiment the marker motions became faster and more abrupt. It should be mentioned, that during the first experiment we faced some difficulties due to problems with the MAV's trim. The overall Apriltags' detection rates based on the experimental results, are presented in table \ref{table:detctionRates}. In order to compute the detection rate, the number of frames during the manual phases (landing and take off) were excluded from the total number of frames. It can be seen that the algorithm, regardless the motion of the Apriltag achieved at least 90\% detection at all cases. It should be mentioned, that due to the VICON system in the room the lighting conditions were not stable, since the camera sensor could detect the infrared flickering caused by its cameras and also, the onboard camera sensor had only a resolution of 480 x 752 pixels.
+Four experiments were performed, in the first three the ability of the MAV to follow a "normally" moving target was tested, while in the fourth experiment the marker motions became faster and more abrupt. It should be mentioned, that during the first experiment we faced some difficulties due to problems with the MAV's trim. The overall Apriltags' detection rates based on the experimental results, are presented in table \ref{table:detctionRates}. In order to compute the detection rate, the number of frames during the manual phases (landing and take off) were excluded from the total number of frames, so for the first experiment we had 2106 frames at which the marker was detected out of 2317 frames, 2020 detections out of 2089 for the second experiment, 786 detections out of 816 for the third and 1122 out of 1205 for the last experiment. It can be seen that the algorithm, regardless the motion of the Apriltag achieved at least 90\% detection at all cases.
 
 \begin{table}
 \begin{center}
     \begin{tabular}{ | l | l |}
     \hline
     Experiment & Detection Rate \\ \hline
-    $1^{st}$ Experiment & 90.86\% \\ \hline
-    $2^{nd}$ Experiment & 96.73\% \\ \hline
-    $3^{rd}$ Experiment & 96.3\% \\ \hline
-    $4^{th}$ Experiment & 93.16\% \\ \hline
+    $1^{st}$ Experiment & 90.89\% \\ \hline
+    $2^{nd}$ Experiment & 96.69\% \\ \hline
+    $3^{rd}$ Experiment & 96.32\% \\ \hline
+    $4^{th}$ Experiment & 93.11\% \\ \hline
     \end{tabular}
-    \caption{The Algorithms detection rates in the four conducted experiments}
+    \caption{In this matrix are presented the Apriltag detection rates, as computed from the experimental data taken from the four conducted experiments. We derive these percentages by comparing the number of frames at which there was a marker detection, to the overall number of frames at which the MAV was not flown by the user. For the first experiment the frames at which we had Apriltag detection were 2106 out of 2317 frames, 2020 out of 2089 frames for the second, 786 out of 816 frames for the third and 1122 out of 1205 for the last conducted experiment.}
     \label{table:detctionRates}
 \end{center}
 \end{table}
@@ -52,19 +52,20 @@ Four experiments were performed, in the first three the ability of the MAV to fo
 \begin{figure}
 	\centering
 	 \includegraphics[width=1.00\textwidth]{images/real_MAV_odom_controller_bag3.pdf}
-	 \caption{The real system's odometry output against the controller input and the apriltag detection position in x-axis versus time.}
+	 \caption{In this figure, we can see the Apriltag as detected from the MAV, the position controller input, which is the position towards which we want the MAV to move and the odometry output, which depicts the actual position of the MAV in space.}
 	 \label{pics:realOdomControlDetection}
 \end{figure}
 
 \begin{figure}
 	\centering
 	 \includegraphics[width=1.00\textwidth]{images/real_euclidean_distance.pdf}
-	 \caption{The euclidean distance between the MAV and the Apriltag at x axis, as resulted from the experiments in the real world.}
+	 \caption{This figure depicts the euclidean distance between the MAV and the Apriltag in x axis versus time. This the actual distance between the user and the MAV. As can be seen the most of the time could not achieve the safety distance of 1.5m because the user changed the desired position, by moving the marker, before the MAV could reach it. Nonetheless, the deviation from the predefined distance is on average 11.67cm.}
 	 \label{pics:euclideanDistance}
 \end{figure}
 
 Since the nature of the experiments is very much alike to each other, only one set of data will be presented. As can be seen from figure \ref{pics:realOdomControlDetection}, the MAV manages to track the marker and follow it under all circumstances. The MAV, acts like a low pass filter on the controller inputs, thus it smoothens the aforementioned as it can be seen from the odometry output. Furthermore, we can observe from figure \ref{pics:euclideanDistance} the euclidean distance between the Auk and the marker with respect to x axis as it proceeds in time. Although the distance between the MAV and the user is, almost at all cases, less than the predefined safety distance, the MAV always leave adequate distance as it can be seen from the orevious figure. The reason for not always achieving the safety distance, is that the user moves the Apriltag before the MAV has reached that predefined distance, but even in this case, the average error from our desired safety distance is only 11.67 cm.   
 
 
-During the last experiment, the ability of the algorithm to track faster and more abrupt motions was tested. During this experiment, some discontinuities in the MAV's motion were observed, they were caused by the instantaneous loss of the Apriltag detection, since the user moved the marker fast from one position to another. During the time between the last observed marker position and until a new detected position was created from the detection algorithm, the MAV's controller was receiving as target position the last position where the marker was detected. Thus, this led to short sudden holds in the MAV's trajectory. During the analysis of the data, it was observed that the periods when the MAV could not detect the Apriltag varied between two to nine frames, or 66 to 300 msec. It should be mentioned, that the aforementioned cases refer only in situations where there is a loss of detection and not when the user moved the Apriltag out of the field of view of the MAV's camera. But even in the latter cases, the MAV was able to regain the marker detection since it had already started moving to its direction.   
+During the last experiment, the ability of the algorithm to track faster and more abrupt motions was tested. During this experiment, some discontinuities in the MAV's motion were observed, they were caused by the instantaneous loss of the Apriltag detection, since the user moved the marker fast from one position to another. During the time between the last observed marker position and until a new detected position was created from the detection algorithm, the MAV's controller was receiving as target position the last position where the marker was detected. This led to short sudden holds in the MAV's trajectory. During the analysis of the data, it was observed that the periods when the MAV could not detect the Apriltag varied between two to nine frames, or 66 to 300 msec. But since the MAV had already started to move to the direction of the marker, it was able to detect and follow it again.
+ 
 

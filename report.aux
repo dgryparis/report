@@ -42,12 +42,17 @@
 \citation{schaves-2015a}
 \citation{hoogervorst2015bsc}
 \citation{6842304}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces The MAV detects the marker and moves to the desired position, based on the marker detection}}{2}{figure.1.1}}
-\newlabel{pics:experimentCapture}{{1.1}{2}{The MAV detects the marker and moves to the desired position, based on the marker detection}{figure.1.1}{}}
+\citation{1467495}
+\citation{ARToolkit}
+\citation{olson2011tags}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces The user holds the Apriltag marker, the MAV detects the marker with its camera. It computes its desired position with respect to the marker detection and moves towards it. As can be seen, the MAV leaves a safety distance between itself and the user.}}{2}{figure.1.1}}
+\newlabel{pics:experimentCapture}{{1.1}{2}{The user holds the Apriltag marker, the MAV detects the marker with its camera. It computes its desired position with respect to the marker detection and moves towards it. As can be seen, the MAV leaves a safety distance between itself and the user}{figure.1.1}{}}
 \newlabel{pics:experimentCapture@cref}{{[figure][1][1]1.1}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Related Work}{2}{section.1.2}}
 \newlabel{sec:related_work}{{1.2}{2}{Related Work}{section.1.2}{}}
 \newlabel{sec:related_work@cref}{{[section][2][1]1.2}{2}}
+\citation{olson2011tags}
+\citation{olson2011tags}
 \citation{olson2011tags}
 \citation{Nklc2014}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}System Description}{5}{chapter.2}}
@@ -62,28 +67,27 @@
 \newlabel{sec:ascTecFirefly}{{2.2}{5}{AscTec Firefly}{section.2.2}{}}
 \newlabel{sec:ascTecFirefly@cref}{{[section][2][2]2.2}{5}}
 \citation{FrameNamingConvention}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The first Apriltag (id=0) of the tag36h11 family}}{6}{figure.2.1}}
-\newlabel{pics:tag36h11}{{2.1}{6}{The first Apriltag (id=0) of the tag36h11 family}{figure.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces This is an example of the visual markers used in our experiments, the Apriltags. The detection of these markers, provide the MAV robust position estimates even at significant distances and challenging lighting conditions. This specific image is the first Apriltag (id=0) of the tag36h11 family, this Apriltag family is the one that the authors propose for use \cite  {olson2011tags}.}}{6}{figure.2.1}}
+\newlabel{pics:tag36h11}{{2.1}{6}{This is an example of the visual markers used in our experiments, the Apriltags. The detection of these markers, provide the MAV robust position estimates even at significant distances and challenging lighting conditions. This specific image is the first Apriltag (id=0) of the tag36h11 family, this Apriltag family is the one that the authors propose for use \cite {olson2011tags}}{figure.2.1}{}}
 \newlabel{pics:tag36h11@cref}{{[figure][1][2]2.1}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces The Firefly MAV\footnotemark }}{6}{figure.2.2}}
-\newlabel{pics:tag36h11}{{2.2}{6}{The Firefly MAV\protect \footnotemark }{figure.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Here is presented the Firefly MAV\footnotemark . This is the platform used in our experiments both in simulation and in real world. Furthermore, in this image we can also observe the Skybotix VI-sensor integrated in the MAV. This is the exact same configuration that was used in our experiments.}}{6}{figure.2.2}}
+\newlabel{pics:tag36h11}{{2.2}{6}{Here is presented the Firefly MAV\protect \footnotemark . This is the platform used in our experiments both in simulation and in real world. Furthermore, in this image we can also observe the Skybotix VI-sensor integrated in the MAV. This is the exact same configuration that was used in our experiments}{figure.2.2}{}}
 \newlabel{pics:tag36h11@cref}{{[figure][2][2]2.2}{6}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Coordinate Frames}{6}{section.2.3}}
 \newlabel{sec:CoordianteFrames}{{2.3}{6}{Coordinate Frames}{section.2.3}{}}
 \newlabel{sec:CoordianteFrames@cref}{{[section][3][2]2.3}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces The image represents the world coordinate frame and the camera frame.}}{7}{figure.2.3}}
-\newlabel{pics:worldcamframe}{{2.3}{7}{The image represents the world coordinate frame and the camera frame}{figure.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces The image represents the world coordinate frame and the camera frame. The transformation $T_{WC}$ transforms the coordinates from the USB camera frame to the world coordinate frame. By doing this we are able to project the marker detections at their true positions in the simulated world.}}{7}{figure.2.3}}
+\newlabel{pics:worldcamframe}{{2.3}{7}{The image represents the world coordinate frame and the camera frame. The transformation $T_{WC}$ transforms the coordinates from the USB camera frame to the world coordinate frame. By doing this we are able to project the marker detections at their true positions in the simulated world}{figure.2.3}{}}
 \newlabel{pics:worldcamframe@cref}{{[figure][3][2]2.3}{7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Coordinate Frames in the Simulation }{7}{subsection.2.3.1}}
 \newlabel{sec: CoordinatesinSimulation}{{2.3.1}{7}{Coordinate Frames in the Simulation}{subsection.2.3.1}{}}
 \newlabel{sec: CoordinatesinSimulation@cref}{{[subsection][1][2,3]2.3.1}{7}}
 \newlabel{eq:camtoworldrot}{{2.1}{7}{Coordinate Frames in the Simulation}{equation.2.3.1}{}}
 \newlabel{eq:camtoworldrot@cref}{{[equation][1][2]2.1}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces The transformation from Apriltag to Reference frame}}{8}{table.2.1}}
-\newlabel{matrix:TRA}{{2.1}{8}{The transformation from Apriltag to Reference frame}{table.2.1}{}}
-\newlabel{matrix:TRA@cref}{{[table][1][2]2.1}{8}}
-\newlabel{TWR}{{2.2}{8}{Coordinate Frames in the Simulation}{equation.2.3.2}{}}
-\newlabel{TWR@cref}{{[equation][2][2]2.2}{8}}
+\newlabel{eq:TRA}{{2.2}{8}{Coordinate Frames in the Simulation}{equation.2.3.2}{}}
+\newlabel{eq:TRA@cref}{{[equation][2][2]2.2}{8}}
+\newlabel{TWR}{{2.3}{8}{Coordinate Frames in the Simulation}{equation.2.3.3}{}}
+\newlabel{TWR@cref}{{[equation][3][2]2.3}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Coordinate Frames in the Real System}{8}{subsection.2.3.2}}
 \newlabel{sec: CoordinatesinRealSystem}{{2.3.2}{8}{Coordinate Frames in the Real System}{subsection.2.3.2}{}}
 \newlabel{sec: CoordinatesinRealSystem@cref}{{[subsection][2][2,3]2.3.2}{8}}
@@ -132,45 +136,47 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The user holds the Apriltag still and the algorithm automatically rotates it around z-axis. The MAV follows the rotating Apriltag and keeps a constant distance at all times. The spikes are caused because by the time the MAV reaches the position from the initial detection, the algorithm has already rotated the marker, thus the MAV "jumps" in order to cover that distance.}}{16}{figure.4.1}}
 \newlabel{pics:xyRotation}{{4.1}{16}{The user holds the Apriltag still and the algorithm automatically rotates it around z-axis. The MAV follows the rotating Apriltag and keeps a constant distance at all times. The spikes are caused because by the time the MAV reaches the position from the initial detection, the algorithm has already rotated the marker, thus the MAV "jumps" in order to cover that distance}{figure.4.1}{}}
 \newlabel{pics:xyRotation@cref}{{[figure][1][4]4.1}{16}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The controller input with respect to z-axis versus time during the three rotation experiments, that were conducted in simulation. The most oscillations are performed at the slowest rotation, while the least at the fastest.}}{16}{figure.4.2}}
-\newlabel{pics:zRotationCOntroller}{{4.2}{16}{The controller input with respect to z-axis versus time during the three rotation experiments, that were conducted in simulation. The most oscillations are performed at the slowest rotation, while the least at the fastest}{figure.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces The controller input with respect to z-axis versus time during the three rotation experiments, that were conducted in simulation. The z position oscillates more at slower rotation speeds, and less at faster rotation speeds. The more oscillations at slower rotation speeds are caused from the fact that the MAV has to halt mid-air in order to wait the Apriltag rotate itself so as to get new detection data.}}{16}{figure.4.2}}
+\newlabel{pics:zRotationCOntroller}{{4.2}{16}{The controller input with respect to z-axis versus time during the three rotation experiments, that were conducted in simulation. The z position oscillates more at slower rotation speeds, and less at faster rotation speeds. The more oscillations at slower rotation speeds are caused from the fact that the MAV has to halt mid-air in order to wait the Apriltag rotate itself so as to get new detection data}{figure.4.2}{}}
 \newlabel{pics:zRotationCOntroller@cref}{{[figure][2][4]4.2}{16}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces The Algorithms detection rates in the four conducted experiments}}{17}{table.4.1}}
-\newlabel{table:detctionRates}{{4.1}{17}{The Algorithms detection rates in the four conducted experiments}{table.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces In this matrix are presented the Apriltag detection rates, as computed from the experimental data taken from the four conducted experiments. We derive these percentages by comparing the number of frames at which there was a marker detection, to the overall number of frames at which the MAV was not flown by the user. For the first experiment the frames at which we had Apriltag detection were 2106 out of 2317 frames, 2020 out of 2089 frames for the second, 786 out of 816 frames for the third and 1122 out of 1205 for the last conducted experiment.}}{17}{table.4.1}}
+\newlabel{table:detctionRates}{{4.1}{17}{In this matrix are presented the Apriltag detection rates, as computed from the experimental data taken from the four conducted experiments. We derive these percentages by comparing the number of frames at which there was a marker detection, to the overall number of frames at which the MAV was not flown by the user. For the first experiment the frames at which we had Apriltag detection were 2106 out of 2317 frames, 2020 out of 2089 frames for the second, 786 out of 816 frames for the third and 1122 out of 1205 for the last conducted experiment}{table.4.1}{}}
 \newlabel{table:detctionRates@cref}{{[table][1][4]4.1}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The real system's odometry output against the controller input and the apriltag detection position in x-axis versus time.}}{17}{figure.4.3}}
-\newlabel{pics:realOdomControlDetection}{{4.3}{17}{The real system's odometry output against the controller input and the apriltag detection position in x-axis versus time}{figure.4.3}{}}
-\newlabel{pics:realOdomControlDetection@cref}{{[figure][3][4]4.3}{17}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The euclidean distance between the MAV and the Apriltag at x axis, as resulted from the experiments in the real world.}}{18}{figure.4.4}}
-\newlabel{pics:euclideanDistance}{{4.4}{18}{The euclidean distance between the MAV and the Apriltag at x axis, as resulted from the experiments in the real world}{figure.4.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces In this figure, we can see the Apriltag as detected from the MAV, the position controller input, which is the position towards which we want the MAV to move and the odometry output, which depicts the actual position of the MAV in space.}}{18}{figure.4.3}}
+\newlabel{pics:realOdomControlDetection}{{4.3}{18}{In this figure, we can see the Apriltag as detected from the MAV, the position controller input, which is the position towards which we want the MAV to move and the odometry output, which depicts the actual position of the MAV in space}{figure.4.3}{}}
+\newlabel{pics:realOdomControlDetection@cref}{{[figure][3][4]4.3}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces This figure depicts the euclidean distance between the MAV and the Apriltag in x axis versus time. This the actual distance between the user and the MAV. As can be seen the most of the time could not achieve the safety distance of 1.5m because the user changed the desired position, by moving the marker, before the MAV could reach it. Nonetheless, the deviation from the predefined distance is on average 11.67cm.}}{18}{figure.4.4}}
+\newlabel{pics:euclideanDistance}{{4.4}{18}{This figure depicts the euclidean distance between the MAV and the Apriltag in x axis versus time. This the actual distance between the user and the MAV. As can be seen the most of the time could not achieve the safety distance of 1.5m because the user changed the desired position, by moving the marker, before the MAV could reach it. Nonetheless, the deviation from the predefined distance is on average 11.67cm}{figure.4.4}{}}
 \newlabel{pics:euclideanDistance@cref}{{[figure][4][4]4.4}{18}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{sec:cocnlusion}{{5}{19}{Conclusion}{chapter.5}{}}
-\newlabel{sec:cocnlusion@cref}{{[chapter][5][]5}{19}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Future Work}{19}{section.5.1}}
-\newlabel{sec:futureWork}{{5.1}{19}{Future Work}{section.5.1}{}}
-\newlabel{sec:futureWork@cref}{{[section][1][5]5.1}{19}}
+\newlabel{sec:cocnlusion}{{5}{21}{Conclusion}{chapter.5}{}}
+\newlabel{sec:cocnlusion@cref}{{[chapter][5][]5}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Future Work}{21}{section.5.1}}
+\newlabel{sec:futureWork}{{5.1}{21}{Future Work}{section.5.1}{}}
+\newlabel{sec:futureWork@cref}{{[section][1][5]5.1}{21}}
 \citation{*}
 \bibstyle{bibliography/IEEEtranN}
 \bibdata{bibliography/references}
-\bibcite{GazeboSimulator}{{1}{}{{Gaz}}{{}}}
-\bibcite{olson2011tags}{{2}{2011}{{Olson}}{{}}}
-\bibcite{RotorsSimulator}{{3}{}{{Rot}}{{}}}
-\bibcite{5509452}{{4}{2010}{{Lupashin et~al.}}{{Lupashin, Schollig, Sherback, and D'Andrea}}}
-\bibcite{hehIFAC11}{{5}{2011}{{Hehn and D\IeC {\textquoteright }Andrea}}{{}}}
-\bibcite{trajectoryGenerationAndControl}{{6}{2014}{{Mellinger et~al.}}{{Mellinger, Michael, and Kumar}}}
-\bibcite{dandreaTedTalk}{{7}{}{{dan}}{{}}}
-\bibcite{lafaroLab}{{8}{}{{laf}}{{}}}
-\bibcite{robornSwam}{{9}{}{{rob}}{{}}}
-\bibcite{lingkevin2014}{{10}{2014}{{Ling}}{{}}}
-\bibcite{schaves-2015a}{{11}{2015}{{Chaves et~al.}}{{Chaves, Wolcott, and Eustice}}}
-\bibcite{hoogervorst2015bsc}{{12}{2015}{{Hoogervorst}}{{}}}
-\bibcite{6842304}{{13}{2014}{{Chudoba et~al.}}{{Chudoba, Saska, Baca, and Preucil}}}
+\bibcite{olson2011tags}{{1}{2011}{{Olson}}{{}}}
+\bibcite{RotorsSimulator}{{2}{}{{Rot}}{{}}}
+\bibcite{5509452}{{3}{2010}{{Lupashin et~al.}}{{Lupashin, Schollig, Sherback, and D'Andrea}}}
+\bibcite{hehIFAC11}{{4}{2011}{{Hehn and D\IeC {\textquoteright }Andrea}}{{}}}
+\bibcite{trajectoryGenerationAndControl}{{5}{2014}{{Mellinger et~al.}}{{Mellinger, Michael, and Kumar}}}
+\bibcite{dandreaTedTalk}{{6}{}{{dan}}{{}}}
+\bibcite{lafaroLab}{{7}{}{{laf}}{{}}}
+\bibcite{robornSwam}{{8}{}{{rob}}{{}}}
+\bibcite{lingkevin2014}{{9}{2014}{{Ling}}{{}}}
+\bibcite{schaves-2015a}{{10}{2015}{{Chaves et~al.}}{{Chaves, Wolcott, and Eustice}}}
+\bibcite{hoogervorst2015bsc}{{11}{2015}{{Hoogervorst}}{{}}}
+\bibcite{6842304}{{12}{2014}{{Chudoba et~al.}}{{Chudoba, Saska, Baca, and Preucil}}}
+\bibcite{1467495}{{13}{2005}{{Fiala}}{{}}}
 \bibcite{Nklc2014}{{14}{2014}{{Nikolic et~al.}}{{Nikolic, Rehder, Burri, Gohl, Leutenegger, Furgale, and Siegwart}}}
 \bibcite{FrameNamingConvention}{{15}{}{{Fra}}{{}}}
-\bibcite{Stroustrup}{{16}{2013}{{Stourstrup}}{{}}}
-\bibcite{MyRepoGitHub}{{17}{}{{MyR}}{{}}}
-\bibcite{ROSApriltag}{{18}{}{{ROS}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{22}{chapter*.8}}
+\bibcite{GazeboSimulator}{{16}{}{{Gaz}}{{}}}
+\bibcite{Stroustrup}{{17}{2013}{{Stourstrup}}{{}}}
+\bibcite{MyRepoGitHub}{{18}{}{{MyR}}{{}}}
+\bibcite{ROSApriltag}{{19}{}{{ROS}}{{}}}
+\bibcite{ARToolkit}{{20}{}{{ART}}{{}}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{24}{chapter*.8}}
