@@ -1,39 +1,154 @@
-@book{Raibert1986LeggedRobotsThatBalance,
-address = {Cambridge, MA},
-author = {Raibert, Marc},
-isbn = {0262181177},
-publisher = {MIT Press},
-title = {{Legged Robots That Balance}},
-url = {http://portal.acm.org/citation.cfm?id=6152&dl=GUIDE},
-year = {1986}
-}
-@book{Rbert1986LaggedRobotsThatBalance,
-address = {Cambridge, MA},
-author = {Rbert, Marc},
-isbn = {0266181177},
-publisher = {MIT Press},
-title = {{Lagged Robots That Balance}},
-url = {http://portal.acm.org/citation.cfm?id=6152&dl=GUIDE},
-year = {1986}
-}
-@article{Vukobratovic2004ZeroMomentPoint,
-author = {Vukobratovi\'{c}, Miomir and Borovac, Branislav},
-issn = {0219-8436},
-journal = {International Journal of Humanoid Robotics},
-number = {01},
-pages = {157--173},
-publisher = {World Scientific},
-title = {{Zero-moment point — thirty five years of its life}},
-volume = {1},
-year = {2004}
-}
-@inproceedings{Pratt1995SEA,
-author = {Pratt, Gill A. and Williamson, Matthew M.},
-booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-doi = {10.1109/IROS.1995.525827},
-pages = {3137--3181},
-title = {{Series elastic actuators}},
-url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=525827},
-year = {1995}
+@book{Stroustrup,
+edition = {Fourth},
+address = {Boston, MA},
+author = {Bjarne Stourstrup},
+isbn = {0321563842},
+publisher = {Addison-Wesley},
+title = {{The C++ Programming Language}},
+url = {http://www.stroustrup.com/4th.html},
+year = {2013}
 }
 
+
+@inproceedings{hehIFAC11,
+title={Quadrocopter trajectory generation and control},
+author={Hehn, M. and D’Andrea, R.},
+booktitle={Proceedings of the IFAC world congress},
+pages={1485--1491},
+year={2011},
+}
+
+@inproceedings{olson2011tags,
+title = {{AprilTag}: A robust and flexible visual fiducial system},
+author = {Edwin Olson},
+booktitle = {Proceedings of the {IEEE} International Conference on Robotics and Automation ({ICRA})},
+year = {2011},
+month = {May},
+pages = {3400-3407},
+keywords = {Robot navigation, SLAM, Visual Fiducial, ARToolkit},
+publisher = {IEEE},
+}
+
+@TECHREPORT{hoogervorst2015bsc,
+       author = {Hoogervorst, R. W. P.},
+        month = jul,
+        title = {Collaborative position control of an UAV using vision and IMU data},
+         type = {BSc report 017RaM2015},
+         year = {2015},
+  institution = {University of Twente},
+}
+
+@TECHREPORT{lingkevin2014,
+author = {Kevin Ling},
+month = sep,
+title = {Precision Landing of a Quadrotor UAV on a Moving Target Using Low-Cost Sensors},
+type = {Msc Thesis},
+year = {2014},
+institution = {University of Waterloo},
+}
+
+@ARTICLE {schaves-2015a,
+    AUTHOR = { Stephen M. Chaves and Ryan W. Wolcott and Ryan M. Eustice },
+    TITLE = { {NEEC} research: Toward {GPS}-denied landing of unmanned aerial vehicles on ships at sea },
+    JOURNAL = { Naval Engineers Journal },
+    YEAR = { 2015 },
+    VOLUME = { 127 },
+    NUMBER = { 1 },
+    PAGES = { 23--35 },
+}
+
+@INPROCEEDINGS{6842304, 
+author={Chudoba, J. and Saska, M. and Baca, T. and Preucil, L.}, 
+booktitle={Unmanned Aircraft Systems (ICUAS), 2014 International Conference on}, 
+title={Localization and stabilization of micro aerial vehicles based on visual features tracking}, 
+year={2014}, 
+pages={611-616}, 
+keywords={autonomous aerial vehicles;feature extraction;navigation;robot vision;tracking;MAV localization;MAV proprietary stabilization;autonomous operation;down-looking camera;external positioning system;inertial sensor;long-term autonomous microaerial vehicle localization;matching;microaerial vehicles;optical flow processing;position stabilization;precision;quad-copter;reliability;visual feature extraction;visual features tracking;Cameras;Feature extraction;Frequency modulation;Navigation;Optical imaging;Robustness;Visualization}, 
+doi={10.1109/ICUAS.2014.6842304}, 
+month={May},}
+
+
+@INPROCEEDINGS{5509452, 
+author={Lupashin, S. and Schollig, A. and Sherback, M. and D'Andrea, R.}, 
+booktitle={Robotics and Automation (ICRA), 2010 IEEE International Conference on}, 
+title={A simple learning strategy for high-speed quadrocopter multi-flips}, 
+year={2010}, 
+pages={1642-1648}, 
+keywords={gradient methods;helicopters;learning (artificial intelligence);matrix algebra;optimisation;position control;ETH Zurich Flying Machine Arena testbed;N-flip maneuver;corrective matrix;five adjustable parameters;gradient adjustment;high-speed quadrocopter multiflips;iterative experiments;low-order first-principles 2D vertical plane model;maneuver parameters;optimization;parametrized quadrocopter multiflips;policy gradient method;quadrotor helicopters;simple learning strategy;state error;Aerodynamics;Design methodology;Error correction;Gradient methods;Helicopters;Iterative methods;Jacobian matrices;Robotics and automation;USA Councils;Vehicle dynamics}, 
+doi={10.1109/ROBOT.2010.5509452}, 
+ISSN={1050-4729}, 
+month={May},}
+
+@incollection{trajectoryGenerationAndControl,
+year={2014},
+isbn={978-3-642-28571-4},
+booktitle={Experimental Robotics},
+volume={79},
+series={Springer Tracts in Advanced Robotics},
+editor={Khatib, Oussama and Kumar, Vijay and Sukhatme, Gaurav},
+doi={10.1007/978-3-642-28572-1_25},
+title={Trajectory Generation and Control for Precise Aggressive Maneuvers with Quadrotors},
+url={http://dx.doi.org/10.1007/978-3-642-28572-1_25},
+publisher={Springer Berlin Heidelberg},
+author={Mellinger, Daniel and Michael, Nathan and Kumar, Vijay},
+pages={361-373},
+language={English}
+}
+
+@inproceedings{Nklc2014,
+  author = "Nikolic, Janosch and Rehder, Joern and Burri, Michael and Gohl, Pascal and Leutenegger, Stefan and Furgale, Paul and Siegwart, Roland Y.",
+  title = "{A} {S}ynchronized {V}isual-{I}nertial {S}ensor {S}ystem with {F}{P}{G}{A} {P}re-{P}rocessing for {A}ccurate {R}eal-{T}ime {S}{L}{A}{M}",
+  booktitle = "IEEE International Conference on Robotics and Automation (ICRA), 2014 : May 31, 2014 - June 7, 2014, Hong Kong, China",
+  year = 2014,
+  pages = "431--437",
+  address = "Piscataway, NJ",
+  publisher = "IEEE",
+}
+
+@online{MyRepoGitHub,
+ALTauthor = {Dimitris Gryparis},
+title = {{Online code repository, https://github.com/ethz-asl/mav\textunderscore demos}},
+date = {2015},
+url = {https://github.com/ethz-asl/mav_demos},
+}
+https://github.com/ethz-asl/minkindr/wiki/Common-Transformation-Conventions
+@online{FrameNamingConvention,
+ALTauthor = {ASL},
+title = {{Online repository, https://github.com/ethz-asl/minkindr/wiki/Common-Transformation-Conventions}},
+date = {2015},
+url = {https://github.com/ethz-asl/minkindr/wiki/Common-Transformation-Conventions},
+}
+@online{GazeboSimulator,
+ALTauthor = {Open Source Robotics Foundation},
+title = {{Open Source Robotics Foundation, Gazebo Simulator http://gazebosim.org/}},
+date = {2014},
+url = {http://gazebosim.org/},
+}
+
+@online{ROSApriltag,
+title = {{Open Source Robotics Foundation}, http://wiki.ros.org/apriltags\textunderscore ros},
+date = {2014},
+url = {http://wiki.ros.org/apriltags\textunderscore ros}
+}
+@online{RotorsSimulator,
+ALTauthor = {Open Source Robotics Foundation},
+title = {{RotorS Simulator}, http://wiki.ros.org/rotors \textunderscore simulator},
+date = {2014},
+url = {http://wiki.ros.org/rotors_simulator},
+}
+
+@online{robornSwam,
+title = {{RobornSwarm Carnegie Mellon, https://sites.google.com/site/mrsdproject201415teamc/}},
+url = {https://sites.google.com/site/mrsdproject201415teamc/},
+}
+
+@online{lafaroLab,
+title = {{Lafaro Labs, http://wiki.lofarolabs.com/index.php/Localizing\textunderscore with\textunderscore  AprilTags}},
+url = {http://wiki.lofarolabs.com/index.php/Localizing_with_AprilTags},
+}
+
+@online{dandreaTedTalk,
+title = {{Raffaello D'Andrea: The astounding athletic power of quadcopters, TEDGlobal}},
+date = {2013},
+url = {https://www.ted.com/talks/raffaello_d_andrea_the_astounding_athletic_power_of_quadcopters},
+}
